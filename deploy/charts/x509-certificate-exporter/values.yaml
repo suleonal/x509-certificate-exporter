@@ -98,8 +98,8 @@ secretsExporter:
       cpu: 200m
       memory: 150Mi
     requests:
-      cpu: 25m
-      memory: 25Mi
+      cpu: 30m
+      memory: 30Mi
   # -- Node selector for Pods of the TLS Secrets exporter
   nodeSelector: {}
   # -- Toleration for Pods of the TLS Secrets exporter
