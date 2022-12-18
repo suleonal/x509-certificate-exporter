@@ -1,0 +1,13 @@
+project: default
+source:
+  repoURL: 'https://github.com/suleonal/x509-certificate-exporter'
+  path: deploy/charts/x509-certificate-exporter/
+  targetRevision: HEAD
+  helm:
+    valueFiles:
+      - values.yaml
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: prom-stack
+syncPolicy:
+  automated: {}
